@@ -22,33 +22,14 @@
                 <i class="fas fa-money-bill-wave mr-2"></i> RupiahNow Konverter
             </a>
 
-            <!-- Hamburger Menu (Mobile Only) -->
-            <button id="hamburger-menu" class="lg:hidden text-white p-2">
-                <i class="fas fa-bars"></i>
-            </button>
-
             <!-- Navbar Links (for both desktop and mobile) -->
-            <div class="hidden lg:flex space-x-8">
-                <a href="index.html" class="text-white text-lg font-medium hover:text-gray-300 transition-all duration-300 ease-in-out">Home</a>
+            <div class="flex space-x-8">
+                <a href="index.html" class="text-white text-lg font-medium hover:text-gray-300 transition-all duration-300 ease-in-out">Beranda</a>
                 <a href="info-rupiah.html" class="text-white text-lg font-medium hover:text-gray-300 transition-all duration-300 ease-in-out">Info Rupiah</a>
                 <a href="about-us.html" class="text-white text-lg font-medium hover:text-gray-300 transition-all duration-300 ease-in-out">Tentang</a>
             </div>
         </div>
     </nav>
-
-    <!-- Sidebar Menu -->
-    <div id="sidebar" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 hidden z-20">
-        <div class="bg-gray-800 w-64 h-full p-4">
-            <button id="close-sidebar" class="text-white text-2xl mb-8">
-                <i class="fas fa-times"></i>
-            </button>
-            <ul class="space-y-6">
-                <li><a href="index.html" class="text-white text-xl font-medium hover:text-gray-300">Home</a></li>
-                <li><a href="info-rupiah.html" class="text-white text-xl font-medium hover:text-gray-300">Info Rupiah</a></li>
-                <li><a href="about-us.html" class="text-white text-xl font-medium hover:text-gray-300">Tentang</a></li>
-            </ul>
-        </div>
-    </div>
 
     <!-- About Us Section -->
     <div class="min-h-screen flex items-center justify-center bg-black bg-opacity-50 py-16">
@@ -59,17 +40,17 @@
             </h1>
 
             <!-- Deskripsi Aplikasi -->
-            <p class="text-lg text-white mb-6 animate-fadeIn delay-200">
+            <p class="text-lg text-white mb-6 animate-fadeIn delay-200 text-justify">
                 Aplikasi ini dibuat untuk membantu pengguna dalam mengonversi mata uang dari berbagai negara ke Rupiah Indonesia. Kami menggunakan data yang akurat untuk memastikan nilai tukar yang tepat.
             </p>
-            <p class="text-lg text-white animate-fadeIn delay-400">
+            <p class="text-lg text-white animate-fadeIn delay-400 text-justify">
                 Dengan antarmuka yang ramah pengguna, aplikasi ini dirancang untuk memberi kenyamanan dalam melakukan konversi mata uang kapan saja dan di mana saja.
             </p>
 
             <!-- Fitur Utama -->
             <h2 class="text-3xl font-semibold text-center mt-12 text-white animate-fadeIn delay-600">Fitur Utama</h2>
             <div class="mt-6">
-                <ul class="list-inside text-lg text-white mt-4 animate-fadeIn delay-800">
+                <ul class="list-inside text-lg text-white mt-4 animate-fadeIn delay-800 text-justify">
                     <li class="mb-4">
                         <strong class="text-xl">Konversi Mata Uang</strong><br>
                         Mengonversi berbagai mata uang internasional ke mata uang lain, termasuk Rupiah Indonesia.
@@ -88,22 +69,6 @@
         <p>&copy; 2024 Dibuat oleh Sadinal Mufti & Aulia Vika Rahman</p>
     </footer>
 
-    <!-- JavaScript untuk mengontrol Sidebar -->
-    <script>
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const sidebar = document.getElementById('sidebar');
-        const closeSidebar = document.getElementById('close-sidebar');
-
-        hamburgerMenu.addEventListener('click', () => {
-            sidebar.classList.remove('hidden');
-        });
-
-        closeSidebar.addEventListener('click', () => {
-            sidebar.classList.add('hidden');
-        });
-    </script>
-
 </body>
 
 </html>
-
