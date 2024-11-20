@@ -10,6 +10,19 @@
 
     <!-- Link ke file CSS eksternal -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Script untuk navbar toggle (Burger menu) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const burgerIcon = document.getElementById('burger-icon');
+            const navbarMobile = document.getElementById('navbar-mobile');
+
+            // Toggle navbar ketika tombol burger diklik
+            burgerIcon.addEventListener('click', function () {
+                navbarMobile.classList.toggle('hidden');
+            });
+        });
+    </script>
 </head>
 
 <body class="bg-cover bg-center" style="background-image: url('assets/background.png');">
