@@ -8,6 +8,6 @@ COPY static ./static
 
 RUN go build -o /RupiahNOW
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD ["/RupiahNOW"]
