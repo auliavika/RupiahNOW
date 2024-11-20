@@ -1,0 +1,7 @@
+services:
+  app:
+    image: auliavr/rupiahnow:latest
+    volumes:
+      - D:/Go:/app
+    ports:
+      - "3000:3000"
